@@ -7,37 +7,36 @@ const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 function createComment(text) {
     return {
-        type: CREATE_COMMENT,
-        text: 'nowy komentarz',
+        type: 'CREATE_COMMENT',
         id: uuid.v4
     }
 }
 
 function editComment(id, text) {
     return {
-        type: EDIT_COMMENT,
-        id: 10,
-        text: 'edycja tekstu'
+        type: 'EDIT_COMMENT',
+        id,
+        text
     }
 }
 
 function removeComment(id) {
     return {
-        type: REMOVE_COMMENT,
-        id: 10,
+        type: 'REMOVE_COMMENT',
+        id
     }
 }
 
 function thumbUpComment(id) {
     return {
-        type: THUMB_UP_COMMENT,
-        id: 10,
+        type: 'THUMB_UP_COMMENT',
+        id
     }
 }
 
 function thumbDownComment(id) {
     return {
-        type: THUMB_DOWN_COMMENT,
-        id: 15,
+        type: 'THUMB_DOWN_COMMENT',
+        id
     }
 }
