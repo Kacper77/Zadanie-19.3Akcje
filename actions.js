@@ -5,38 +5,32 @@ const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 
-function createComment(text) {
+function createComment() {
     return {
-        type: 'CREATE_COMMENT',
-        id: uuid.v4
+        type: 'CREATE_COMMENT'
     }
 }
 
-function editComment(id, text) {
+function editComment() {
     return {
-        type: 'EDIT_COMMENT',
-        id,
-        text
+        type: 'EDIT_COMMENT'
     }
 }
 
-function removeComment(id) {
+function removeComment() {
     return {
-        type: 'REMOVE_COMMENT',
-        id
+        type: 'REMOVE_COMMENT'
     }
 }
 
-function thumbUpComment(id) {
+function thumbUpComment() {
     return {
-        type: 'THUMB_UP_COMMENT',
-        id
+        type: 'THUMB_UP_COMMENT'
     }
 }
 
-function thumbDownComment(id) {
+function thumbDownComment() {
     return {
-        type: 'THUMB_DOWN_COMMENT',
-        id
+        type: 'THUMB_DOWN_COMMENT'
     }
 }
